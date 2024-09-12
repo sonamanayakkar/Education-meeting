@@ -1,0 +1,460 @@
+    *{
+    margin: 0px;
+    padding: 0px;
+}
+.container1{
+    
+    height: 75vh;
+    position: relative;
+    background-image: url(heading-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.container1 .doggle{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 50px;
+    display: none;
+
+}
+.container1 .doggle i{
+    font-size: 40px;
+}
+
+.container1 video{
+    width: 100%;
+    position: absolute ;
+    top: 0px;
+    bottom: 50px;
+    height: 112vh;
+    font-size: 50px;
+    z-index: -8;
+    position: fixed;
+    
+}
+.menu{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background: linear-gradient(to top,#000000b2 ,#7a7779c5);
+    justify-content: space-between;  
+    height: 70px; 
+    /* margin-top: 30px; */
+    padding-top: 20px;
+    z-index: 100;
+    position: fixed;
+    margin-top: 50px;
+}
+.menu h1{
+    margin-left: 90px;
+    margin-top: 10px;
+    color: white;
+    
+}
+.menu ul{
+    list-style: none;
+    margin-top: 20px;
+    word-spacing: 10px;
+    margin-right:100px ;
+    
+}
+.menu ul li a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+.menu ul li a:hover{
+    color:orange;
+    
+}
+#menu1{
+    
+    width: 15%;
+    background-color: white;
+    height: 8%;  
+    position: absolute;
+    right: 15%;
+    top: 100px;
+    
+}
+.container1 .menu2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container1 .menu2 h1{
+    font-size: 60px;
+    background: linear-gradient(to right,#00ff15 ,#ffffff);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.container1 .menu2 h1:hover{
+    background: linear-gradient(to right,#ffffff ,#33ff00);
+    transition: 10s;
+    font-weight: 900;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.container1 .menu2 h3{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.container2 .total{
+    background-image: url(meetings-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: red solid; */
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 100px;
+}
+.container2 .total .box1{
+    /* border: black solid; */
+    margin: 20px;
+    border-radius: 20px;
+    height: 95%;
+    width: 80%;
+    
+}
+.container2 .total .box1:hover{
+    transform: scale(1.2);
+    box-shadow:0 0 20px rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.container2 .total .box2{
+    /* border: black solid; */
+    margin: 20px;
+    border-radius: 20px;
+    height: 85%;
+    width: 80%;
+    margin-top: 80px;
+}
+.container2 .total .box2:hover{
+    transform: scale(1.2);
+    box-shadow:0 0 20px rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.container2 .total .box1 .division1{
+    /* border: rgb(55, 0, 255) solid; */
+    height: 50%;
+    /* background-image: url(meeting-01.jpg); */
+   
+    position: relative;
+}
+.container2 .total .box2 .division3{
+    /* border: blueviolet solid; */
+    position: relative;
+}
+.container2 .total .box1 .division1 img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.container2 .total .box2 .division3 img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+   
+    border-top-right-radius: 20px;
+}
+.container2 .total .box2 .division3 img:hover{
+   
+}
+.container2 .total .box1 .division2{
+    /* border: red solid; */
+    height: 47%;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    position: relative;
+    
+}
+.container2 .total .box1 .division2:hover{
+    background:linear-gradient(to right, #000000,#ffffff ,#000000);
+    
+    
+}
+.container2 .total .box2 .division2{
+    /* border: red solid; */
+    height: 47%;
+    position: relative;
+    border-radius: 0px 0px 20px 20px;
+    background-color: white;
+}
+.container2 .total .box2 .division2:hover{
+    background:linear-gradient(to right, #000000,#ffffff ,#000000);
+}
+.container2 .total .box2 .division2{
+    position: relative;
+}
+.container2 .total .box1 .division1 .price{
+    /* border: rgb(0, 0, 0) solid; */
+    background-color: white;
+    margin: 15px 0px 0px 15px;
+    position: absolute;
+    width: 15%;
+    height: 10%;
+    top: 0px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.container2 .total .box2 .division3 .price{
+    /* border: rgb(0, 0, 0) solid; */
+    background-color: white;
+    margin: 15px 0px 0px 15px;
+    position: absolute;
+    width: 15%;
+    height: 10%;
+    top: 0px;
+    z-index: 100;
+    border-radius: 20px;
+    padding: 10px;
+}
+.container2 .total .box1 .division1 .price h2{
+    font-size: 17px;
+}
+.container2 .total .box2 .division3 .price h2{
+    font-size: 18px;
+}
+.container2 .total .box1 .division2 .date{
+    /* border: green solid; */
+    width: 15%;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+.container2 .total .box1 .division2 .content{
+    /* border: green solid; */
+    height: 60%;
+    width: 70%;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+.container2 .total .box1 .division2 .content h1{
+    font-size: 25px;
+    
+}
+.container2 .total .box2 .division1{
+    /* border: red solid; */
+    height: 50%;
+    /* background-image: url(meeting-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+.container2 .total .box2 .division2{
+    /* border: red solid; */
+    height: 47%;
+    position: relative;
+    
+}
+.container2 .total .box2 .division3 .price{
+    /* border: blue solid; */
+    margin: 15px 0px 0px 15px;
+    width: 15%;
+    height: 12%;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+}
+.container2 .total .box2 .division1 .price h2{
+    font-size: 17px;
+}
+.container2 .total .box2 .division2 .date{
+    /* border: green solid; */
+    width: 15%;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+.container2 .total .box2 .division2 .content{
+    /* border: green solid; */
+    height: 60%;
+    width: 70%;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+.container2 .total .box2 .division2 .content h1{
+    font-size: 25px;
+}
+.container2 .end-toch{
+    border: black solid;
+    background-image: url(meetings-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+}
+.container2 .line{
+    /* border: blue solid; */
+}
+.container2 .end{
+    margin-top: 50px;
+    
+}
+.container2 .end-toch .end .white{
+    text-align: center;
+    color: white;
+}
+.container2 .end-toch .orange{
+    color: orange;
+    text-align: center;
+}
+@media (max-width:500px) {
+    .container1.menu{
+        /* display: flex; */
+        flex-direction: row;
+        width: 100%;
+        position: absolute;
+        display: block;
+        top: 0px;
+        display: none;
+        background: linear-gradient(to top,#000000b2 ,#7a7779c5);
+        justify-content: space-between;  
+        
+        
+        padding-top: 20px;
+        z-index: 100;
+        height: 500px;
+        position: fixed;
+    }
+    .container1{
+    
+        height: 150vh;
+        position: relative;
+        background-image: url(heading-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    ul{
+        width: 100%;
+        display: none;
+    }
+    /* toggle function */
+    ul li a{
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .menu h1{
+        margin-left: 50px;
+        margin-top: 10px;
+        color: white;
+        
+    }
+    .container1 .toggle{
+        background-color: black;
+        color: white;
+        height: 50px;
+        display: block;
+    
+    }
+    .container1 .toggle i{
+        font-size: 40px;
+    }
+    .active{
+        display: block;
+    }
+    .menu ul{
+        list-style: none;
+        margin-top: 20px;
+        word-spacing: 10px;
+        margin-right:100px ;
+        
+    }
+    .menu ul li a{
+        margin-right: 20px;
+        text-decoration: none;
+        color: white;
+    }
+    .menu ul li a:hover{
+        color:orange;
+        
+    }
+    #menu1{
+        
+        width: 15%;
+        background-color: white;
+        height: 8%;  
+        position: absolute;
+        right: 15%;
+        top: 100px;
+        
+    }
+    .container1 .menu2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .container1 .menu2 h1{
+        font-size: 40px;
+        background: linear-gradient(to right,#00ff15 ,#ffffff);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .container1 .menu2 h1:hover{
+        background: linear-gradient(to right,#ffffff ,#33ff00);
+        transition: 10s;
+        font-weight: 900;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .container1 .menu2 h3{
+        font-size: 20px;
+        text-align: center;
+        color: white;
+    }
+    .container2 .total{
+        background-image: url(meetings-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* border: red solid; */
+        height: 1000vh;
+       
+        display: grid;
+        grid-template-columns: 1fr ;
+        padding: 20px;
+    }
+
+    .container2 .total .box1{
+        /* border: black solid; */
+        margin: 20px;
+        border-radius: 20px;
+        height: 500px;
+        width: 90%;
+    }
+    .container2 .total .box2{
+        /* border: black solid; */
+        margin: 20px;
+        border-radius: 20px;
+        height: 400px;
+        width: 90%;
+        margin-top: 20px;
+    }
+    .container2 .total .box1:hover{
+        transform: scale(1.2);
+        box-shadow:0 0 20px rgb(255, 255, 255);
+        transition: 0.5s;
+    }
+    
+    
+    
+    
+
+}

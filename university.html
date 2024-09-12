@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university</title>
+    <link rel="stylesheet" href="university.css">
+</head>
+<body>
+    <a href="home.HTML"><h1>Back</h1></a>
+    <div class="back-free">
+        <div class="back-change" onclick="background1()">
+            <img src="young-student-looking-book-library.jpg"> 
+        </div>
+        <div class="back-change" onclick="background2()"> <img src="free-time-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking.jpg"></div>
+        <div class="back-change" onclick="background3()">  <img src="young-girl-reading-textbook.jpg"></div>
+        <div class="back-change" onclick="background4()"><img src="city-committed-education-collage-concept.jpg"></div>
+    </div>
+</body>
+<script>
+    function background1(){
+        document.querySelector('body').style.background = "url('young-student-looking-book-library.jpg') center center / cover";
+    }
+    function background2(){
+        document.querySelector('body').style.background = "url('free-time-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking.jpg') center center / cover";
+    }
+    function background3(){
+        document.querySelector('body').style.background = "url('young-girl-reading-textbook.jpg') center center / cover";
+    }
+    function background4(){
+        document.querySelector('body').style.background = "url('city-committed-education-collage-concept.jpg') center center / cover";
+    }
+</script>
+</html>

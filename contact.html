@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container1">
+        <div class="toggle"><i class='bx bx-menu'></i></div>
+        <div class="menu">
+            <h1>EDU MEETING</h1>
+            <ul>
+                <li>
+                <li> <a href="home.HTML">HOME</a></li>  
+                <li><a href="featuremeeting.html">MEETINGS</a></li>     
+                <li> <a href="index.HTML #container3">APPLY NOW</a></li>    
+                <li> <a href="course.html">COURSES</a></li>    
+                <li> <a href="">CONTACT US</a></li> 
+                <li> <a href="shopping.html">BOOKS</a></li> 
+                <li> <a href="signin.html">log out</a></li>
+                </li>
+            </ul>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('i').click(function(){
+                    $('ul').toggleClass('active');
+                    $('.menu').toggleClass('active');
+                })
+            })
+        </script>
+        <div class="main1">
+            <h3>contact us</h3>
+            <h1>Let's talk about</h1>
+            <h1>Your project</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="details">
+            <form action="" id="form">
+                <div class="formcontrol">
+                    <label for="name1">First Name</label><br>
+                    <input type="text" id="name1" placeholder="first name"><br>
+                    <div class="error"></div>
+                
+                </div>
+                <div class="formcontrol">
+                    <label for="name2">Second Name</label><br>
+                    <input type="text" id="name2" placeholder="second name"><br>
+                    <div class="error"></div>
+                </div>
+                <div class="formcontrol">
+                    <label for="number">Mobile no </label><br>
+                    <input type="number" id="number" placeholder="mobile no"><br>
+                    <div class="error"></div>
+                </div>
+                <div class="formcontrol">
+                    <label for="message">Message</label><br>
+                    <input type="text" id="message" placeholder="Text message"><br>
+                    <div class="error"></div>
+                </div>
+                <button type="submit" onclick="add()">submit</button>
+            </form>
+            <div class="first">
+                <p>we will store and process your personal data on terms defined <a href="#">here</a></p>
+            </div>
+            
+        
+        </div>
+    </div>
+    <script src="contact.js"></script>
+    <!-- <script>
+        function add(){
+            var name1=document.getElementById("name1").value;
+            var name2=document.getElementById("name2").value;
+            var number=document.getElementById("number").value;
+            var message=document.getElementById("message").value;
+            if(name1=="" || name1.value==null){
+                document.getElementById("label").innerHTML="";
+            }
+        }
+    </script> -->
+    <script>
+        function add(){
+            var name1=document.getElementById("name1").value;
+            var name2=document.getElementById("name2").value;
+            var number=document.getElementById("number").value;
+            var message=document.getElementById("message").value;
+
+            if(name1 =='' || null){
+                alert("invalid input");
+            }
+            else if(name2 =='' || null){
+                alert("invalid input");
+            }
+            else if(number =='' || null){
+                alert("invalid input");
+            }
+            else if(message =='' || null){
+                alert("invalid input");
+            }
+            else{
+                alert("Message send successfully");
+                window.location.href="index.HTML"
+            }
+        }
+    </script>
+</body>
+</html>

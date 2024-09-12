@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.container1{
+    position: relative;
+    height: 150vh;
+    border: rgba(0, 128, 0, 0) solid;
+    background-image: url(top-view-chat-bubbles-with-telephone-receiver-copy-space.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container1 .menu{
+    display: flex;
+    position: fixed;
+    width: 95%;
+    height: 4%;
+    z-index: 100;
+    justify-content: space-between;
+    padding: 40px;
+    border: rgba(0, 0, 0, 0.395) solid;
+    backdrop-filter: blur(20px);
+    background-color:transparent;
+}
+.container1 .menu h1{
+    background: linear-gradient(to right,#000000,#787878 ,#ffffff );
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 20px;
+}
+.container1 ul li{
+    display: inline-block;
+    list-style: none;
+    
+}
+.container1 ul li a{
+    text-decoration: none;
+    padding: 30px;
+    font-size: 18px;
+    color: white;
+}
+.container1 ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+.main1{
+    display: flex;
+    /* border: black solid; */
+    
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    flex-direction: column;
+}
+.details{
+    display: flex;
+    border: rgba(0, 0, 0, 0.23) solid;
+    border-radius: 10px;
+    box-shadow: 1px rgba(0, 0, 0, 0.597);
+    backdrop-filter: blur(20px);
+    width: 35%;
+    position: absolute;
+    left: 32%;
+   
+    /* height: 60vh; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.formcontrol{
+    /* border: red solid; */
+    padding: 20px;
+    width: 50vh;
+}
+.formcontrol input{
+    width: 80%;
+    height: 50px;
+}
+.first{
+    /* border: rgb(0, 0, 0) solid; */
+    /* width: 70vh; */
+    padding: 20px;
+        
+}
+.first p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+button{
+    margin-top: 30px;
+    margin-left: 20%;
+    background-color: rgba(0, 0, 0, 0.301);
+    color: rgb(0, 0, 0);
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+.formcontrol input{
+    border: 1px solid rgb(34, 55, 195);
+    border-radius: 10px;
+    text-align: center;
+}
+.error{
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.formcontrol .success input{
+    border-color: green;
+}
+.formcontrol .error input{
+    border-color: red;
+}
+@media (max-width:400px) {
+    .container1{
+        background-image: url(top-view-chat-bubbles-with-telephone-receiver-copy-space.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container1 .menu{
+        /* display: flex; */
+        position: fixed;
+        width: 95%;
+        height: 14%;
+        z-index: 100;
+        justify-content: space-between;
+        padding: 40px;
+        border: rgba(0, 0, 0, 0.395) solid;
+        backdrop-filter: blur(20px);
+        background-color:transparent;
+    }
+    .container1 ul li{
+        /* display: inline-block; */
+        list-style: none;
+        
+    }
+    .container1 .menu h1{
+        background: linear-gradient(to right,#000000,#787878 ,#ffffff );
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: 900;
+        font-size: 10px;
+        letter-spacing: 10px;
+        margin-left: 0px;
+    }
+    .container1 ul li a{
+        text-decoration: none;
+        padding: 30px;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+    }
+    .container1 ul li a:hover{
+        color: rgb(255, 248, 248);
+    }
+    .main1{
+        /* display: flex; */
+        /* border: black solid; */
+        
+        height: 0vh;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        /* flex-direction: column; */
+    }
+    .details{
+        display: flex;
+        border: rgba(0, 0, 0, 0.23) solid;
+        border-radius: 10px;
+        box-shadow: 1px rgba(0, 0, 0, 0.597);
+        backdrop-filter: blur(20px);
+        width: 85%;
+        height: 40%;
+        position: absolute;
+       left: 10%;
+       position: relative;
+        /* height: 60vh; */
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #form{
+        position: absolute;
+    }
+    .formcontrol{
+        /* border: red solid; */
+        padding: 10px;
+        width: 100%;
+        height: 50px;
+        
+    }
+    .formcontrol input{
+        width: 100%;
+        height: 30px;
+    }
+    .first{
+        /* border: rgb(0, 0, 0) solid; */
+        /* width: 70vh; */
+        padding: 20px;
+            
+    }
+    .first p{
+        margin-top: 20px;
+        font-size: 15px;
+        display: none;
+    }
+    button{
+        margin-top: 30px;
+        margin-left: 20%;
+        background-color: rgba(0, 0, 0, 0.301);
+        color: rgb(0, 0, 0);
+        height: 30px;
+        width: 50%;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 20px;
+        
+    }
+    .formcontrol input{
+        border: 1px solid rgb(34, 55, 195);
+        border-radius: 10px;
+        text-align: center;
+    }
+    .main1{
+        display: flex;
+        /* border: black solid; */
+        
+        height: 30vh;
+        align-items: center;
+        justify-content: center;
+        margin-top: 160px;
+        flex-direction: column;
+    }
+    .first{
+        
+    }
+}
+
+
+    
