@@ -5,33 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container1">
-        <div class="toggle"><i class='bx bx-menu'></i></div>
         <div class="menu">
-            <h1>EDU MEETING</h1>
-            <ul>
-                <li>
-                <li> <a href="home.HTML">HOME</a></li>  
-                <li><a href="featuremeeting.html">MEETINGS</a></li>     
-                <li> <a href="index.HTML #container3">APPLY NOW</a></li>    
-                <li> <a href="course.html">COURSES</a></li>    
-                <li> <a href="">CONTACT US</a></li> 
-                <li> <a href="shopping.html">BOOKS</a></li> 
-                <li> <a href="signin.html">log out</a></li>
-                </li>
-            </ul>
+            <div class="head"><h1>EDU MEETING</h1></div>
+            <div class="pages">
+                <ul>
+                    <li><a href="home.HTML">HOME</a></li>
+                    <li> <a href="featuremeeting.html">MEETINGS</a>
+                    <li><a href="home.HTML">APPLY NOW</a></li>
+                        <!-- <a href="">PAGES</a> -->
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="shopping.html">BOOKS</a></li>
+                    <li><a href="signup.html">sign-up</a></li>
+                    <li><a href="index.html">sign-in</a></li>
+                </ul>
+            </div>
+            <a  class="close"><i class="fa-solid fa-bars"></i></a>
+            
         </div>
-        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('i').click(function(){
-                    $('ul').toggleClass('active');
-                    $('.menu').toggleClass('active');
-                })
-            })
-        </script>
+    </div>
+        
         <div class="main1">
             <h3>contact us</h3>
             <h1>Let's talk about</h1>
@@ -108,4 +105,13 @@
         }
     </script>
 </body>
+<script>
+    const menu=document.querySelector('.close i')
+    const list=document.querySelector('.menu ul')
+    
+    menu.addEventListener('click',()=>{
+        console.log("hi")
+        list.classList.toggle('show')
+})
+</script>
 </html>

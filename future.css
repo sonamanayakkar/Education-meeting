@@ -17,6 +17,7 @@
     color: white;
     height: 50px;
     display: none;
+    position: fixed;
 
 }
 .container1 .doggle i{
@@ -357,9 +358,11 @@
     }
     .container1 .toggle{
         background-color: black;
+        position: fixed;
         color: white;
         height: 50px;
         display: block;
+        
     
     }
     .container1 .toggle i{
