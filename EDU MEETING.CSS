@@ -198,12 +198,12 @@ body video{
     width: 80%;
     height: 50vh;
     margin-top: 50px;
-    /* border: yellow solid; */
+   
     scroll-snap-type: mandatory;
     overflow-x: scroll;
     display: grid;
     
-    /* width: 80%; */
+   
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 #card-items{

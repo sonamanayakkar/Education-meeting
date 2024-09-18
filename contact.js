@@ -51,3 +51,34 @@ function setSuccess(element){
     formcontrol.classList.remove('error')
 }
 
+function add(){
+    var name1=document.getElementById("name1").value;
+    var name2=document.getElementById("name2").value;
+    var number=document.getElementById("number").value;
+    var message=document.getElementById("message").value;
+
+    if(name1 =='' || null){
+        alert("invalid input");
+    }
+    else if(name2 =='' || null){
+        alert("invalid input");
+    }
+    else if(number =='' || null){
+        alert("invalid input");
+    }
+    else if(message =='' || null){
+        alert("invalid input");
+    }
+    else{
+        alert("Message send successfully");
+        window.location.href="home.HTML"
+    }
+}
+const menu=document.querySelector('.close i')
+    const list=document.querySelector('.menu ul')
+    
+    menu.addEventListener('click',()=>{
+        console.log("hi")
+        list.classList.toggle('show')
+})
+
