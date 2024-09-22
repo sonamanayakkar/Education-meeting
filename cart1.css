@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: rgba(193, 193, 193, 0.63);
+}
+.container1{
+    /* border: black solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 40px;
+    
+}
+.container1 .fa-circle-xmark{
+    position: absolute;
+    left: 20px;
+    position: fixed;
+    top: 20px;
+    font-size: 40px;
+}
+.inside{
+    margin-top: 40px;
+    /* border: red solid; */
+    width: 70%;
+    background-color: white;
+    height: 90vh;
+    /* position: fixed; */
+    
+   
+}
+.head{
+    display: flex;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px  black;
+    padding: 20px;
+    position: fixed;
+    /* position: absolute; */
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+.head i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.head i:hover{
+    color: rgb(255, 0, 179);
+    transition: 0.5s;
+    text-shadow: 5px 5px 5px rgb(24, 24, 24);
+}
+.secondbox{
+    /* border: red solid; */
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    
+    height: 80%;
+    overflow: hidden;
+    overflow: scroll;
+}
+.content{
+    padding: 15px;
+    /* border: black solid; */
+    box-shadow: 5px 5px 5px gray;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60vh;
+    align-items: center;
+    justify-content: space-between;
+    scroll-snap-align: start;
+    scroll-snap-stop: always ;
+}
+.content img{
+     width: 60%;
+     height: 40%; 
+    
+    
+}
+.content  h2{
+    font-size: 100%;
+}
+.content h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 162, 0);
+    text-shadow: 5px 5px 5px black;
+}
+.content button{
+    padding: 10px;
+    color: whitesmoke;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 200;
+}
+
+.slide{
+    border: rgb(6, 6, 6) solid;
+    border-radius: 15px;
+    height: 80vh;
+    background-color: rgb(213, 212, 212);
+    width: 25%;
+    position: absolute;
+    right: 5px;
+    top: 70px;
+    padding: 10px;
+    display: none;
+    position:fixed;
+    
+}
+.slide .cart1{
+    margin-top: 30px;
+    display: flex;
+    /* flex-direction: column; */
+    height: 30vh;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    position: relative;
+    display: none;
+    /* border: black solid; */
+    box-shadow: 5px 5px 5px black;
+}
+
+.slide .cart1 img{
+    height: 20vh;
+}
+.slide .cart1 h2{
+    font-size: 15px;
+}
+.slide .cart1 .incre{
+    position: absolute;
+    display: flex;
+    right: 40%;
+    text-align: center;
+    align-items: center;
+    bottom: 0px;
+}
+.slide .cart1 .incre .plus{
+    border: black solid;
+    width: 20px;
+    cursor: pointer;
+}
+.slide .cart1 .incre .minus{
+    border: black solid;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+.slide .cart1 .incre .plus1{
+    border: black solid;
+    width: 20px;
+    cursor: pointer;
+}
+.slide .cart1 .incre .minus1{
+    border: black solid;
+    width: 20px;
+    cursor: pointer;
+}
+.slide .cart1 .incre .plus2{
+    border: black solid;
+    width: 20px;
+    cursor: pointer;
+}
+.slide .cart1 .incre .minus2{
+    border: black solid;
+    width: 20px;
+    cursor: pointer;
+}
+.slide .cart1 .incre .plus3{
+    border: black solid;
+    width: 20px;
+    cursor: pointer;
+}
+.slide .cart1 .incre .minus3{
+    border: black solid;
+    width: 20px;
+    cursor: pointer;
+}
+.slide .cart1 .incre .plus4{
+    border: black solid;
+    width: 20px;
+    cursor: pointer;
+}
+.slide .cart1 .incre .minus4{
+    border: black solid;
+    width: 20px;
+    cursor: pointer;
+}
+.slide .cart1 .incre .plus5{
+    border: black solid;
+    width: 20px;
+    cursor: pointer;
+}
+.slide .cart1 .incre .minus5{
+    border: black solid;
+    width: 20px;
+    cursor: pointer;
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    overflow: hidden;
+    overflow: scroll;
+    /* border: palevioletred solid; */
+}
+.scroll .cart1{
+    scroll-snap-align: start;
+    scroll-snap-stop: always ;
+}
+.footer{
+    margin-top: 30px;
+    /* border: red solid; */
+    display: flex;
+    justify-content: space-around;
+}
+.footer .total{
+    background-color: rgb(255, 225, 0);
+    border-right: black solid;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    color: white;
+}
+.footer .end{
+    background-color: rgb(98, 97, 97);
+    /* border: black solid; */
+    width: 50%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cart1 .fa-trash-can{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.machine{
+    height: 70%;
+    width: 80%;
+    
+}
+.machine1{
+    height: 70%;
+    /* width: 20%; */
+}
+
+
+@media  (max-width:830px){
+
+    .container1{
+        /* border: black solid; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: 40px;
+        
+    }
+
+    .inside{
+        margin-top: 40px;
+        /* border: red solid; */
+        /* width: 70%; */
+        background-color: white;
+        height: 90vh;
+        /* position: fixed; */
+        
+       
+    }
+    .head{
+        display: flex;
+        background-color: white;
+        box-shadow: 5px 5px 5px 5px  black;
+        padding: 20px;
+        position: fixed;
+        height: 10%;
+        width: 60%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .head i{
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .head i:hover{
+        color: rgb(255, 0, 179);
+        transition: 0.5s;
+        text-shadow: 5px 5px 5px rgb(24, 24, 24);
+    }
+    .secondbox{
+        /* border: red solid; */
+        margin-top: 100px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        column-gap: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 80%;
+        overflow: hidden;
+        overflow: scroll;
+    }
+    .content{
+        padding: 15px;
+        /* border: black solid; */
+        box-shadow: 5px 5px 5px gray;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 40vh;
+        align-items: center;
+        justify-content: space-between;
+        scroll-snap-align: start;
+        scroll-snap-stop: always ;
+    }
+    .content img{
+        /* width: 100%;
+        height: 400px; */
+        
+        
+    }
+    .content button{
+        padding: 5px;
+        color: whitesmoke;
+        background-color: black;
+        cursor: pointer;
+        border-radius: 10px;
+        font-weight: 200;
+    }
+    
+    .slide{
+        border: rgb(6, 6, 6) solid;
+        border-radius: 15px;
+        height: 80vh;
+        background-color: rgb(213, 212, 212);
+        width: 80%;
+        position: absolute;
+        right: 5px;
+        top: 70px;
+        padding: 10px;
+        display: none;
+        position:fixed;
+        
+    }
+    .slide .cart1{
+        margin-top: 30px;
+        display: flex;
+        /* flex-direction: column; */
+        height: 20vh;
+        background-color: white;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+        position: relative;
+        display: none;
+        /* border: black solid; */
+        box-shadow: 5px 5px 5px black;
+    }
+    
+    .slide .cart1 img{
+        height: 10vh;
+    }
+    .slide .cart1 h2{
+        font-size: 15px;
+    }
+    .slide .cart1 .incre{
+        position: absolute;
+        display: flex;
+        right: 40%;
+        text-align: center;
+        align-items: center;
+        bottom: 0px;
+    }
+    .slide .cart1 .incre .plus{
+        border: black solid;
+        width: 20px;
+        cursor: pointer;
+    }
+    .slide .cart1 .incre .minus{
+        border: black solid;
+        width: 20px;
+        cursor: pointer;
+    }
+    
+    
+    .slide .cart1 .incre .plus1{
+        border: black solid;
+        width: 20px;
+        cursor: pointer;
+    }
+    .slide .cart1 .incre .minus1{
+        border: black solid;
+        width: 20px;
+        cursor: pointer;
+    }
+    .slide .cart1 .incre .plus2{
+        border: black solid;
+        width: 20px;
+        cursor: pointer;
+    }
+    .slide .cart1 .incre .minus2{
+        border: black solid;
+        width: 20px;
+        cursor: pointer;
+    }
+    .slide .cart1 .incre .plus3{
+        border: black solid;
+        width: 20px;
+        cursor: pointer;
+    }
+    .slide .cart1 .incre .minus3{
+        border: black solid;
+        width: 20px;
+        cursor: pointer;
+    }
+    .slide .cart1 .incre .plus4{
+        border: black solid;
+        width: 20px;
+        cursor: pointer;
+    }
+    .slide .cart1 .incre .minus4{
+        border: black solid;
+        width: 20px;
+        cursor: pointer;
+    }
+    .slide .cart1 .incre .plus5{
+        border: black solid;
+        width: 20px;
+        cursor: pointer;
+    }
+    .slide .cart1 .incre .minus5{
+        border: black solid;
+        width: 20px;
+        cursor: pointer;
+    }
+    
+    .scroll{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        overflow: hidden;
+        overflow: scroll;
+        /* border: palevioletred solid; */
+    }
+    .scroll .cart1{
+        scroll-snap-align: start;
+        scroll-snap-stop: always ;
+    }
+    .footer{
+        margin-top: 30px;
+        /* border: red solid; */
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer .total{
+        background-color: rgb(255, 225, 0);
+        border-right: black solid;
+        text-align: center;
+        padding: 10px;
+        width: 50%;
+        color: white;
+    }
+    .footer .end{
+        background-color: rgb(98, 97, 97);
+        /* border: black solid; */
+        width: 50%;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .cart1 .fa-trash-can{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        color: rgb(255, 0, 0);
+        cursor: pointer;
+    }
+    .machine{
+        height: 70%;
+        width: 80%;
+        
+    }
+    .machine1{
+        height: 70%;
+        /* width: 20%; */
+    }
+    
+}

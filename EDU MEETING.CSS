@@ -256,7 +256,16 @@ body video{
     top: 50%;
     transform: translate(-50%);
 }
-
+.find{
+    /* border: red solid; */
+    position: absolute;
+    right: 50px;
+    top: 150px;
+}
+.find input{
+    padding: 10px;
+    border-radius: 10px;
+}
 
 
 #container2{
